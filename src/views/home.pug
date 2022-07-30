@@ -10,7 +10,10 @@ html(lang="en")
         header 
             h1 Call with 
         main
-            
+            div#myStream
+                video#camera(autoplay, playsinline, width="400", height="300")
+                button#mute Mute
+                button#camera Turn Camera Off
 
         script(src="/socket.io/socket.io.js")
         script(src="/public/js/app.js")
