@@ -11,8 +11,9 @@ html(lang="en")
             h1 Call with
         main
             div#myStream
-                video#myFace(autoplay,playsinline, muted, width="400", height="400")
+                video#cameraView(autoplay,playsinline, width="400", height="300")
                 button#mute Mute
                 button#camera Turn Camera Off
+                select#camerasSelect
         script(src="/socket.io/socket.io.js") 
         script(src="/public/js/app.js")
