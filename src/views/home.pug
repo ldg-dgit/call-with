@@ -16,9 +16,10 @@ html(lang="en")
                     button Enter room
             div#call
                 div#myStream
-                    video#cameraView(autoplay,playsinline, width="400", height="300")
+                    video#cameraView(autoplay, playsinline, width="400", height="300")
                     button#mute Mute
                     button#camera Turn Camera Off
                     select#camerasSelect
+                    video#peerStream(autoplay, playsinline, width="400", height="300")
         script(src="/socket.io/socket.io.js") 
         script(src="/public/js/app.js")
